@@ -6,6 +6,6 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-    - uses: action/checkout@v4
+    - uses: actions/checkout@v4
     - name: Print Message
       run: echo "Benvenuti nella CI!"
