@@ -1,0 +1,14 @@
+name: env-demo
+on: 
+ push:
+  branches: [ "develop" ]
+env:
+  APP_NAME: "MyAwesoneApp"
+  APP-ENV: "staging"
+jobs:
+  print-vars:
+    runs-on: ubuntu-latest
+    steps:
+       - name: Shov Config
+         run: |
+           echo "Deploying $APP_NAME to $APP_ENV environment"
