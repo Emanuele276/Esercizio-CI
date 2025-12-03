@@ -9,4 +9,4 @@ jobs:
       - name: Saluto
         run: echo "Inizio Workshop CD/CDI"
       - name: Info Sistema
-        run: uname-a 
+        run: uname -a 
