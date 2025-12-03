@@ -1,5 +1,21 @@
 {
-    "scripts" : {
-        "test":"exit 0"
-    }
+  "name": "esercizio-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Testing...' && exit 0",
+    "build": "mkdir dist && touch dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emanuele276/Esercizio-CI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emanuele276/Esercizio-CI/issues"
+  },
+  "homepage": "https://github.com/Emanuele276/Esercizio-CI#readme"
 }
