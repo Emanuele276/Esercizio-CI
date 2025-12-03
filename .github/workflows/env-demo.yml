@@ -11,4 +11,4 @@ jobs:
     steps:
        - name: Shov Config
          run: |
-           echo "Deploying $APP_NAME to $APP_ENV environment"
+           echo "Deploying $APP_NAME to ${{secrets.SUPER_SECRET}} environment"
