@@ -14,4 +14,14 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: app-dist
-          path: dist/     
+          path: dist/ 
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@master
+        with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        script: |
+          cd /home/ubuntu/my-app
+          git pull
+          docker compose up -d --build        
