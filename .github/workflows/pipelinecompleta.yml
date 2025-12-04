@@ -1,0 +1,12 @@
+name : Pipeline Completa
+on: 
+ push: 
+  branches: [ "reliase" ]
+jobs:
+  pipeline-app:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm install
+      - run: npm test  
+      - run: npm run build 
+      - run: echo "Deploying...""
