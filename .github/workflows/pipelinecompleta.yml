@@ -16,7 +16,7 @@ jobs:
       name: Staging
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Deploying $PASSWORD"
+      - run: echo "Deploying ${{PASSWORD}}"
   deploy-production:   
     needs: build-and-test
     if: github.ref == 'refs/heads/main'
@@ -25,7 +25,7 @@ jobs:
       name: Production
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Deploying $PASSWORD"
+      - run: echo "Deploying ${{PASSWORD}}"
    
 
 
